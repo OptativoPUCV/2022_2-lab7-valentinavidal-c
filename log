@@ -595,3 +595,25 @@ heap.c:53:8: error: ‘no’ undeclared (first use in this function)
       |        ^~
 Compilation failed
 f4b4a6f
+Sun 16 Oct 2022 11:43:17 PM UTC: 
+ heap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_pop’:
+heap.c:46:36: error: expected expression before ‘[’ token
+   46 |   pq->heapArray[0] = pq->heapArray=[pq->size];
+      |                                    ^
+heap.c:48:3: error: ‘priority’ undeclared (first use in this function)
+   48 |   priority = pq->heapArray[0].priority;
+      |   ^~~~~~~~
+heap.c:48:3: note: each undeclared identifier is reported only once for each function it appears in
+heap.c:49:3: error: ‘now’ undeclared (first use in this function); did you mean ‘pow’?
+   49 |   now = 1;
+      |   ^~~
+      |   pow
+In file included from test.c:4:
+heap.c:53:8: error: ‘no’ undeclared (first use in this function)
+   53 |     if(no+1<=pq->size && pq->heapArray[now+1].priority > priority) now++;
+      |        ^~
+Compilation failed
+c8db2cc
