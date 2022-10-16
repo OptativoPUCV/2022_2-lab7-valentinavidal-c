@@ -276,3 +276,16 @@ heap.c:30:39: error: expected expression before ‘heapElem’
       |                                       ^~~~~~~~
 Compilation failed
 26b1736
+Sun 16 Oct 2022 11:00:53 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:30:31: error: invalid type argument of unary ‘*’ (have ‘int’)
+   30 |     pq->heapArray = *realloc (*pq->capac, heapElem);
+      |                               ^~~~~~~~~~
+heap.c:30:43: error: expected expression before ‘heapElem’
+   30 |     pq->heapArray = *realloc (*pq->capac, heapElem);
+      |                                           ^~~~~~~~
+Compilation failed
+c69e8c5
