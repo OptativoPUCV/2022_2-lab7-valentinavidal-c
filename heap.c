@@ -26,8 +26,8 @@ void* heap_top(Heap* pq){
 
 void heap_push(Heap* pq, void* data, int priority){
   if (pq->size>pq->capac){
-    capac = capac*2 +1;
-    pq->heapArray = realloc (capac*heapElem);
+    capacidad = capacidad*2 +1;
+    pq->heapArray = realloc (capacidad*heapElem);
   }
   int now = pq->size;
 
