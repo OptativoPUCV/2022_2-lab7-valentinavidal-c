@@ -19,3 +19,14 @@ Sun 16 Oct 2022 10:34:41 PM UTC:
  tests:  2|2
 total_score: 20/70
 b57b642
+Sun 16 Oct 2022 10:37:30 PM UTC: 
+ heap.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:30:18: error: ‘heapArray’ undeclared (first use in this function)
+   30 |   while(now>0 && heapArray [(now-1)/2].priority < priority){
+      |                  ^~~~~~~~~
+heap.c:30:18: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+d5c4f0f
