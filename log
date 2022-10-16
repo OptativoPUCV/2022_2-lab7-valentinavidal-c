@@ -494,3 +494,23 @@ Sun 16 Oct 2022 11:19:29 PM UTC:
  tests:  2|2
 total_score: 20/70
 8984f4a
+Sun 16 Oct 2022 11:23:17 PM UTC: 
+ heap.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:38:3: error: ‘heapArray’ undeclared (first use in this function)
+   38 |   heapArray[now].priority = priority;
+      |   ^~~~~~~~~
+heap.c:38:3: note: each undeclared identifier is reported only once for each function it appears in
+heap.c:40:3: error: ‘size’ undeclared (first use in this function)
+   40 |   size++
+      |   ^~~~
+heap.c:40:9: error: expected ‘;’ before ‘}’ token
+   40 |   size++
+      |         ^
+      |         ;
+   41 | }
+      | ~        
+Compilation failed
+345777b
