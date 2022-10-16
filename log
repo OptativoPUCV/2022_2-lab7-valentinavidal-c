@@ -52,3 +52,9 @@ heap.c:31:5: error: ‘heapArray’ undeclared (first use in this function)
 heap.c:31:5: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 da7769d
+Sun 16 Oct 2022 10:38:02 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|2
+total_score: 20/70
+2302a6e
