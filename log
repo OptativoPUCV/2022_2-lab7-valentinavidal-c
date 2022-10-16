@@ -514,3 +514,17 @@ heap.c:40:9: error: expected ‘;’ before ‘}’ token
       | ~        
 Compilation failed
 345777b
+Sun 16 Oct 2022 11:23:24 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:38:3: error: ‘heapArray’ undeclared (first use in this function)
+   38 |   heapArray[now].priority = priority;
+      |   ^~~~~~~~~
+heap.c:38:3: note: each undeclared identifier is reported only once for each function it appears in
+heap.c:40:3: error: ‘size’ undeclared (first use in this function)
+   40 |   size++;
+      |   ^~~~
+Compilation failed
+3cf8318
