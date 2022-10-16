@@ -41,3 +41,14 @@ heap.c:30:18: error: ‘heapArray’ undeclared (first use in this function)
 heap.c:30:18: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 afd4e85
+Sun 16 Oct 2022 10:37:54 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:31:5: error: ‘heapArray’ undeclared (first use in this function)
+   31 |     heapArray[now] = pq->heapArray[(now-1)/2];
+      |     ^~~~~~~~~
+heap.c:31:5: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+da7769d

@@ -27,7 +27,7 @@ void* heap_top(Heap* pq){
 void heap_push(Heap* pq, void* data, int priority){
   int now = pq->size;
 
-  while(now>0 && heapArray [(now-1)/2].priority < priority){
+  while(now>0 && pq->heapArray [(now-1)/2].priority < priority){
     heapArray[now] = pq->heapArray[(now-1)/2];
     now = (now-1)/2;
   }
