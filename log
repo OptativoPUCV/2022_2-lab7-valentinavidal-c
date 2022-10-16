@@ -100,3 +100,20 @@ In file included from test.c:2:
       |              ^~~~~~~
 Compilation failed
 3ad73ac
+Sun 16 Oct 2022 10:47:55 PM UTC: 
+ heap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:30:40: error: expected expression before ‘heapElem’
+   30 |     pq->heapArray = realloc (pq->capac*heapElem);
+      |                                        ^~~~~~~~
+heap.c:30:21: error: too few arguments to function ‘realloc’
+   30 |     pq->heapArray = realloc (pq->capac*heapElem);
+      |                     ^~~~~~~
+In file included from test.c:2:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdlib.h:550:14: note: declared here
+  550 | extern void *realloc (void *__ptr, size_t __size)
+      |              ^~~~~~~
+Compilation failed
+5b2ef56
