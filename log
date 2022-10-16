@@ -58,3 +58,24 @@ Sun 16 Oct 2022 10:38:02 PM UTC:
  tests:  2|2
 total_score: 20/70
 2302a6e
+Sun 16 Oct 2022 10:46:46 PM UTC: 
+ heap.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:29:5: error: ‘capac’ undeclared (first use in this function)
+   29 |     capac = capac*2 +1;
+      |     ^~~~~
+heap.c:29:5: note: each undeclared identifier is reported only once for each function it appears in
+heap.c:30:36: error: expected expression before ‘heapElem’
+   30 |     pq->heapArray = realloc (capac*heapElem);
+      |                                    ^~~~~~~~
+heap.c:30:21: error: too few arguments to function ‘realloc’
+   30 |     pq->heapArray = realloc (capac*heapElem);
+      |                     ^~~~~~~
+In file included from test.c:2:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdlib.h:550:14: note: declared here
+  550 | extern void *realloc (void *__ptr, size_t __size)
+      |              ^~~~~~~
+Compilation failed
+9070093
