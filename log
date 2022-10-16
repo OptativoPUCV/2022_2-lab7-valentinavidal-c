@@ -248,3 +248,17 @@ In file included from test.c:2:
 cc1: all warnings being treated as errors
 Compilation failed
 e2b2dcc
+Sun 16 Oct 2022 11:00:09 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:30:31: error: ‘capac’ undeclared (first use in this function)
+   30 |     pq->heapArray = *realloc (capac, *heapElem);
+      |                               ^~~~~
+heap.c:30:31: note: each undeclared identifier is reported only once for each function it appears in
+heap.c:30:39: error: expected expression before ‘heapElem’
+   30 |     pq->heapArray = *realloc (capac, *heapElem);
+      |                                       ^~~~~~~~
+Compilation failed
+01c065b
