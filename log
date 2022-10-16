@@ -127,3 +127,13 @@ heap.c:30:41: error: expected expression before ‘heapElem’
       |                                         ^~~~~~~~
 Compilation failed
 0075b4f
+Sun 16 Oct 2022 10:48:28 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:30:43: error: ‘Heap’ {aka ‘struct Heap’} has no member named ‘heapElem’
+   30 |     pq->heapArray = realloc* (pq->capac*pq->heapElem);
+      |                                           ^~
+Compilation failed
+aae1794
