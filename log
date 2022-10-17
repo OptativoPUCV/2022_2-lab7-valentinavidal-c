@@ -728,3 +728,9 @@ heap.c:49:3: error: ‘now’ undeclared (first use in this function); did you m
       |   pow
 Compilation failed
 61ce2b6
+Mon 17 Oct 2022 12:57:52 AM UTC: 
+ heap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  5|2
+total_score: 45/70
+69a3812
