@@ -698,3 +698,18 @@ heap.c:51:58: error: ‘priority’ undeclared (first use in this function)
       |                                                          ^~~~~~~~
 Compilation failed
 dc43780
+Mon 17 Oct 2022 12:50:45 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_pop’:
+heap.c:48:3: error: ‘priority’ undeclared (first use in this function)
+   48 |   priority = pq->heapArray[0].priority;
+      |   ^~~~~~~~
+heap.c:48:3: note: each undeclared identifier is reported only once for each function it appears in
+heap.c:49:3: error: ‘now’ undeclared (first use in this function); did you mean ‘pow’?
+   49 |   now = 1;
+      |   ^~~
+      |   pow
+Compilation failed
+617729d
