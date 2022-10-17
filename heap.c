@@ -48,7 +48,7 @@ void heap_pop(Heap* pq){
   pq->priority = pq->heapArray[0].priority;
   now = 1;
 
-  while ((now<=pq->size && pq->heapArray[now].priority > priority)||now+1<=pq->size&&pq->heapArray[now+1].priority > priority){
+  while ((now<=pq->size && pq->heapArray[now].priority > priority)||(now+1<=pq->size&&pq->heapArray[now+1].priority > priority)){
     heapElem temporal = pq->heapArray[(now+1)/2];
     if(no+1<=pq->size && pq->heapArray[now+1].priority > priority) now++;
     pq->heapArray[(now-1)/2] = pq->heapArray[now];
