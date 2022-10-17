@@ -680,3 +680,21 @@ heap.c:53:8: error: ‘no’ undeclared (first use in this function)
       |        ^~
 Compilation failed
 d6f8344
+Mon 17 Oct 2022 12:47:36 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_pop’:
+heap.c:48:5: error: ‘Heap’ {aka ‘struct Heap’} has no member named ‘priority’
+   48 |   pq->priority = pq->heapArray[0].priority;
+      |     ^~
+heap.c:49:3: error: ‘now’ undeclared (first use in this function); did you mean ‘pow’?
+   49 |   now = 1;
+      |   ^~~
+      |   pow
+heap.c:49:3: note: each undeclared identifier is reported only once for each function it appears in
+heap.c:51:58: error: ‘priority’ undeclared (first use in this function)
+   51 |   while ((now<=pq->size && pq->heapArray[now].priority > priority) || (now+1<=pq->size&&pq->heapArray[now+1].priority > priority)){
+      |                                                          ^~~~~~~~
+Compilation failed
+dc43780
